@@ -1,0 +1,335 @@
+:root{
+    --color-primary: #4B4B4B;
+    --color-secondary:#FFD747;
+    --color-black:#2C2C2C ;  
+    --color-white:#FFFFFF;
+    
+    --menu-color:#F5F4F4;
+    --menu-icon-color: #999999;
+    --bg-color:#FBFBFB;
+    --box-shadow-custom: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+}
+
+
+.color-secondary{
+    background-color: var(--color-secondary);
+}
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+}
+
+i{
+    width: 24px;
+    height: 24px;
+}
+
+header{
+    width: auto;
+    height: 64px;
+    background-color: var(--color-primary);
+    padding: .5rem 5rem;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    color: var(--color-white);
+    
+}
+.menu-left,.menu-right{
+    width: auto;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+}
+.menu-left > *{
+    margin-right: 1rem;
+}
+.menu-right > *{
+   margin-left: 3rem;
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
+section{
+    width: auto;
+    height: auto;
+}
+
+.jumbotron{
+    height: calc(100vh - 64px);
+    background-color: #000000;
+    position: relative;
+}
+.jumbotron-container{
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    top: 8%;
+    left: 10%;
+    display: flex;
+}
+.jumbotron-content,.jumbotron-image{
+    width: 50%;
+    position: absolute;
+}
+.jumbotron-content{
+    left: 0px;
+    bottom: 0px;
+    padding: 1rem;
+    color: var(--color-white);
+}
+
+.jumbotron-content h1{
+    font-size: 4rem;
+    color: var(--color-secondary);
+}
+.jumbotron-content h2{
+    font-size: 2.5rem;
+    font-weight: 500 ;
+}
+.jumbotron-content p{
+    line-height: 5rem;
+}
+.jumbotron-image{
+    right: 0px;
+}
+.jumbotron-image img{
+    width: 90%;
+}
+.jumbotron-social-media{
+    position: absolute;
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    background-color: var(--color-black);
+    bottom: 0px;
+    text-align: center;
+}
+.jumbotron-social-media > * {
+    margin-bottom: 10px;
+}
+.jumbotron-social-media > *:last-child {
+    margin-bottom: 0px;
+}
+.jumbotron-social-media .btn svg{
+    width: 18px;
+    height: 18px;
+}
+
+
+
+
+.shop{
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+}
+.shop aside{
+    width: 20%;
+    background-color:var(--color-white);
+}
+.shop article{
+    width: 75%;
+}
+
+.content-card{
+    width: 100%;
+    margin: .5rem 0px;
+    padding: 0;
+}
+
+footer{
+    padding: 5rem;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+.footer-container{
+    font-size: .8rem;
+    display: flex;
+}
+.footer-container > .col {
+    flex: 80%;
+}
+
+.footer-container .col:first-child{
+    flex: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-container .col:first-child img{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+.footer-container .col:first-child span{
+    line-height: 20px;
+}
+.footer-container .col:last-child{
+    flex: 10%;
+}
+.footer-menu{
+    padding: 0px 5rem;
+}
+.footer-menu ul{
+    list-style: none;
+    display: flex;
+}
+.footer-menu ul > li{
+    padding: 1rem;
+}
+.footer-menu ul > li:first-child{
+    padding-left: 0px;
+}
+.footer-social-media{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-social-media .btn svg{
+    width: 1rem;
+}
+/* STYLE BUTTON */
+.btn{
+    width: 24px;
+    height: 24px;  
+    cursor: pointer
+    ;  
+}
+.btn i,.btn svg{
+    width: 24px;
+    height: 24px;
+}
+.btn-circle{
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 20px;
+}
+/* END STYLE BUTTON */
+
+
+/* STYLE FORMGROUP */
+    .form-group{
+        width: 300px;
+        height: 28px;
+        border-radius: 3rem;
+        border: 1px solid var(--menu-icon-color);
+        color:var(--menu-icon-color) ;
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+        padding: 0px 10px;
+    }
+    .form-group input{
+        background: transparent;
+        border: initial;
+        width: 100%;
+        height: 100%;
+    }
+    .form-group i{
+        float: right;
+    }
+    .form-group input:focus{
+        border: initial;
+        outline:initial;
+    }
+    .form-group input::placeholder{
+        color: var(--menu-icon-color);
+    }
+/* END STYLE FORMGROUP */
+
+/* STYLE ACCORDION */
+    .accordion{
+        width: auto;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .accordion .principal-item{
+        height: 64px;
+        border-bottom: 1px solid #F0F0F0;
+        font-weight: bold;
+        padding: .5rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+    .principal-item i{
+        color: #979797;
+    }
+/* END STYLE FORMGROUP */
+
+
+/* STYLE CARD */
+    .card{
+        width: 29%;
+        filter: var(--box-shadow-custom);
+        border-radius: 16px;
+        background-color: var(--color-white);
+        padding: .5rem 1rem;
+        display: inline-block;
+        max-width: 100%;
+    }
+    .circle-color{
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        margin-left: 5px;
+    }
+    .card-header{
+        display: flex;
+        justify-content: flex-end;
+        padding: .5rem;
+    }
+    .card-body{
+        text-align: center;
+    }
+    .card-body h3{
+        margin: 5px 0px;
+    }
+    .card-body p{
+        margin: 2px 0px;
+    }
+    .card-image img{
+        width: 100%;
+    }
+    .card-footer{
+        border-top: 1px solid #D8D8D8;
+        display: flex;
+        justify-content: space-between;
+        padding: .5rem;
+    }
+/* END STYLE CARD */
+
+/*STYLE CALL TO ACTION*/
+
+.call-to-action{
+    background-color: initial;
+    color: var(--color-white);
+    padding: 10px 15px;
+    border: 1px solid var(--color-white);
+    border-radius: 1rem;
+    min-width: 100px;
+    cursor: pointer;
+    transition: ease-in-out all .3s;
+}
+.call-to-action:focus{
+    outline: none;
+
+}
+.call-to-action:hover{
+    padding: 10px 30px;
+    border: 1px solid var(--color-secondary);
+}
+/* END STYLE CALL TO ACTION*/
